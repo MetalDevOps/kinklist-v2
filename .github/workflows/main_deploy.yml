@@ -21,6 +21,7 @@ jobs:
       run: |
         git config --global user.email ${{secrets.EMAIL}}
         echo ${{secrets.EMAIL}}
+        
         git config --global user.name "MetalDevops"
         git remote set-url origin https://${{secrets.GH_TOKEN}}@github.com/MetalDevops/kinklist-v2.git
         npm run deploy
